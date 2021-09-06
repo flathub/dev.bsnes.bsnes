@@ -23,6 +23,12 @@ modules:
       - type: git
         url: https://github.com/bsnes-emu/bsnes.git
         commit: 063e645ff27faba651c80b9f4648b91d2b85a79c
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/bsnes-emu/bsnes/releases/latest
+          tag-query: .tag_name
+          version-query: '$tag | sub("^v"; "")'
+          timestamp-query: .published_at
       - type: patch
         path: 0001-load-optimal-drivers.patch
       - type: patch
