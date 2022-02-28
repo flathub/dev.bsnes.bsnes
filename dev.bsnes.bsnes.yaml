@@ -16,7 +16,8 @@ modules:
   - name: bsnes
     buildsystem: simple
     build-commands:
-      - make -j $FLATPAK_BUILDER_N_JOBS -C bsnes install build=release local=false hiro=gtk3 prefix=$FLATPAK_DEST
+      - make -j $FLATPAK_BUILDER_N_JOBS -C bsnes install build=release local=false
+        hiro=gtk3 prefix=$FLATPAK_DEST
       - install -D -m 644 -t $FLATPAK_DEST/share/metainfo $FLATPAK_ID.metainfo.xml
     sources:
       - type: git
@@ -26,7 +27,7 @@ modules:
           type: json
           url: https://api.github.com/repos/bsnes-emu/bsnes/releases/latest
           tag-query: .tag_name
-          version-query: '$tag | sub("^v"; "")'
+          version-query: $tag | sub("^v"; "")
           timestamp-query: .published_at
       - type: patch
         path: 0001-load-optimal-drivers.patch
