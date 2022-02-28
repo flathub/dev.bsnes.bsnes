@@ -56,7 +56,13 @@
   <launchable type="desktop-id">dev.bsnes.bsnes.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://bsnes.dev/images/preview.png</image>
+      <image>https://raw.githubusercontent.com/bsnes-emu/bsnes/master/.assets/tengai-makyou-zero.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/bsnes-emu/bsnes/master/.assets/bahamut-lagoon.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/bsnes-emu/bsnes/master/.assets/user-interface.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://bsnes.dev</url>
