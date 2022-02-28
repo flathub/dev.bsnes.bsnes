@@ -72,9 +72,6 @@
   </provides>
   <releases>
     <release version="115" date="2020-03-20"/>
-    <release version="115" date="2020-03-20">
-      <url>https://github.com/bsnes-emu/bsnes/releases/tag/v115</url>
-    </release>
   </releases>
   <content_rating type="oars-1.1"/>
 </component>
