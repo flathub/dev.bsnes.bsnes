@@ -12,6 +12,7 @@ finish-args:
   - --socket=x11
   - --device=all
   - --filesystem=home:ro
+  - --filesystem=/run/media:ro
 modules:
   - name: bsnes
     buildsystem: simple
