@@ -11,8 +11,9 @@ finish-args:
   - --socket=pulseaudio
   - --socket=x11
   - --device=all
-  - --filesystem=home:ro
-  - --filesystem=/run/media/mmcblk0p1
+  - --filesystem=home
+  - --filesystem=/media
+  - --filesystem=/run/media
 modules:
   - name: bsnes
     buildsystem: simple
