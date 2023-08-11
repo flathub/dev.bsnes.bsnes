@@ -14,6 +14,7 @@ finish-args:
   - --filesystem=home
   - --filesystem=/media
   - --filesystem=/run/media
+  - --filesystem=xdg-config/gtk-3.0:ro
 modules:
   - name: bsnes
     buildsystem: simple
