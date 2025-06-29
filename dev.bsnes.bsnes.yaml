@@ -25,7 +25,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/bsnes-emu/bsnes.git
-        commit: 717606dda9ad05a636e901c0f4f443fe088ff2c8
+        commit: b815744b4cff6d6854090545b78ae8e1a6669976
         x-checker-data:
           type: json
           url: https://api.github.com/repos/bsnes-emu/bsnes/releases/latest
