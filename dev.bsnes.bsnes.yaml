@@ -1,6 +1,6 @@
 app-id: dev.bsnes.bsnes
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: bsnes
 rename-desktop-file: bsnes.desktop
@@ -25,13 +25,14 @@ modules:
     sources:
       - type: git
         url: https://github.com/bsnes-emu/bsnes.git
-        commit: b815744b4cff6d6854090545b78ae8e1a6669976
-        x-checker-data:
-          type: json
-          url: https://api.github.com/repos/bsnes-emu/bsnes/releases/latest
-          tag-query: .tag_name
-          version-query: $tag | sub("^v"; "")
-          timestamp-query: .published_at
+        commit: ae5cc6010b16e7803f36548a8bf1d915ce6e6c10
+        # The last commit from the repository
+        # x-checker-data:
+        #   type: json
+        #   url: https://api.github.com/repos/bsnes-emu/bsnes/releases/latest
+        #   tag-query: .tag_name
+        #   version-query: $tag | sub("^v"; "")
+        #   timestamp-query: .published_at
       - type: patch
         path: 0001-load-optimal-drivers.patch
       - type: file
