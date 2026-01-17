@@ -1,6 +1,6 @@
 app-id: dev.bsnes.bsnes
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: bsnes
 rename-desktop-file: bsnes.desktop
